@@ -1,0 +1,160 @@
+/* ----------- Base Layout ----------- */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e7f6f2 100%);
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  color: #0f3d91;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+h3 {
+  color: #2e4a7d;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Centered header */
+td h1, td h3 {
+  text-align: center;
+}
+
+/* ----------- Navigation Bar ----------- */
+td a {
+  color: #004aad;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+td a:hover {
+  background: #004aad;
+  color: white;
+  text-decoration: none;
+}
+
+/* Section titles */
+b[id] {
+  color: #004aad;
+  font-size: 22px;
+  border-left: 5px solid #004aad;
+  padding-left: 10px;
+  background: rgba(0,74,173,0.05);
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* ----------- Content Boxes ----------- */
+table {
+  width: 95%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+th {
+  background: #004aad;
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: #f8fbff;
+}
+
+tr:hover td {
+  background-color: #e9f0ff;
+  transition: 0.2s ease-in-out;
+}
+
+/* Dimmed text for past sessions */
+.light-text-row {
+  color: #808080;
+}
+
+/* ----------- Links inside tables ----------- */
+td a {
+  color: #004aad;
+  font-weight: 500;
+}
+
+td a:hover {
+  color: #00337f;
+  text-decoration: underline;
+}
+
+/* ----------- Decorative HR ----------- */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #004aad, #00a6a6);
+  border-radius: 3px;
+  margin: 30px auto;
+  width: 90%;
+}
+
+/* ----------- Footer ----------- */
+#txt, footer, p[align="center"] {
+  text-align: center;
+  color: #444;
+  font-size: 15px;
+}
+
+footer a, p[align="center"] a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+footer a:hover, p[align="center"] a:hover {
+  text-decoration: underline;
+}
+
+/* ----------- Responsive ----------- */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
